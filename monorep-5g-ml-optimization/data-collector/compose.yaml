@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "8081:8081"
+    networks:
+      - app-network
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+      SPRING_DATASOURCE_URL: jdbc:postgresql://ep-floral-hill-a5bvwr62.us-east-2.aws.neon.tech/network_data?user=neondb_owner&password=HBKNQbl3dp8j&sslmode=require
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.postgresql.Driver
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.PostgreSQLDialect
+      NETWORK_SIMULATOR_URL: http://network-simulator-app-1:8080/simulation/
+
+networks:
+  app-network:
+    external: true

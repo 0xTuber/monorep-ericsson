@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+Flask
+psycopg2-binary
+joblib
+SQLAlchemy
+python-dotenv
+gunicorn
+waitress
