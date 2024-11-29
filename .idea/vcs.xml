@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/monorep-5g-ml-optimization" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/monorep-5g-ml-optimization-backup" vcs="Git" />
   </component>
 </project>
